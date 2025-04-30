@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/vue-query"
-import { useRuntimeConfig } from '#app'
+//import { useRuntimeConfig } from '#app'
 import type { ApiOptions } from "~/stores/googleStore";
 
 export default function useQueryFetch(queryKey: string, endpoint: string, options: ApiOptions) {
@@ -31,7 +31,7 @@ export default function useQueryFetch(queryKey: string, endpoint: string, option
 
 // Could be in another file
 // Get related API key from queryKey
-const getApiKeyFromQueryKey = (queryKey: string):string => {
+/*const getApiKeyFromQueryKey = (queryKey: string):string => {
     const config = useRuntimeConfig()
 
     switch (queryKey) {
@@ -40,4 +40,4 @@ const getApiKeyFromQueryKey = (queryKey: string):string => {
         default:
             return ""
     }
-}
+}*/

@@ -1,14 +1,12 @@
 <template>
     <div>
-        <header>
-            Test
-        </header>
+        <HeaderView />
 
         <main>
             <slot />
         </main>
 
-        <!--<ScrollToTopButton />-->
+        <FooterView />
     </div>
 </template>
 
